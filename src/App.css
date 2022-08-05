@@ -30,12 +30,17 @@
 }
 
 .modal-apresentacao{
+  animation: fadeIn 1s;
   display: flex;
   flex-direction: column;
   position: fixed;
   width: 100vw;
   height: 100vh;
   background: linear-gradient(to bottom, rgba(0,0,0,1) , rgba(0, 0, 0, 0.788) 75% ) ;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 .titulo{
   font-family: 'Bigelow Rules', cursive;
