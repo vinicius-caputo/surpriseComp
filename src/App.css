@@ -21,7 +21,6 @@
 }
 
 .pomo{
-  background-color: #ffd700;
   width: 100px ;
   height: 50px;
   position: absolute;
@@ -48,6 +47,7 @@
   font-family: 'Smythe', cursive;
   font-size: 33px;
   text-align: center;
+  margin-bottom: -20px;
 }
 .gold{
   color: #ffd700;
@@ -73,3 +73,9 @@
   background-color: whitesmoke;
   color: black;
 }
+
+.pomocap{
+  align-self: center;
+  margin-top: 50px;
+}
+
