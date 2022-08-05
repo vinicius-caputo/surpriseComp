@@ -5,7 +5,7 @@
   background-color: #f5f5f5;
   background-image: url("quadra.jpg") ;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:  cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,7 +45,7 @@
 .titulo{
   font-family: 'Bigelow Rules', cursive;
   letter-spacing: 2.5px;
-  font-size: 70px; 
+  font-size: 60px; 
   text-align: center;
 }
 .paragrafo{
@@ -84,3 +84,21 @@
   margin-top: 50px;
 }
 
+@media(max-width: 768px){
+
+  .titulo{
+
+    font-size: 50px;
+  }
+  .paragrafo{
+    font-size: 25px;
+  }
+
+  .pomocap{
+    margin-top: 20px;
+  }
+}
+.pmenor{
+  margin-top: -20px;
+  font-size: 20px;
+}

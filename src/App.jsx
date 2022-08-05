@@ -14,11 +14,11 @@ function App() {
   function getRandomIntX() {
     let min = globalCoords.x - 70;
     if (min < 100) {
-      min = 100;
+      min = 100 + 70;
     }
     let max = Math.floor(globalCoords.x + 70);
     if (max > windowSize.innerWidth - 100) {
-      max = windowSize.innerWidth - 100;
+      max = windowSize.innerWidth - 170;
     }
     return Math.floor(Math.random() * (max - min) + min);
   }
@@ -26,34 +26,28 @@ function App() {
   function getRandomIntY() {
     let min = globalCoords.y - 70;
     if (min < 100) {
-      min = 100;
+      min = 100 + 70;
     }
     let max = Math.floor(globalCoords.y + 70);
     if (max > windowSize.innerHeight - 100) {
-      max = windowSize.innerHeight - 100;
+      max = windowSize.innerHeight - 170;
     }
     return Math.floor(Math.random() * (max - min) + min);
   }
 
   const [action, setAction] = useState(0);
-  const [globalCoords, setGlobalCoords] = useState({ x: (windowSize.innerWidth/2), y: (windowSize.innerHeight/2) });
+  const [globalCoords, setGlobalCoords] = useState({
+    x: windowSize.innerWidth / 2,
+    y: windowSize.innerHeight / 2,
+  });
 
   useEffect(() => {
-    // 👇️ get global mouse coordinates
-    // const handleWindowMouseMove = (event) => {
-    //  setGlobalCoords({
-    //     x: event.pageX + 50,
-    //     y: event.pageY + 50,
-    //   });
-    // };
     function handleWindowResize() {
       setWindowSize(getWindowSize());
     }
     window.addEventListener("resize", handleWindowResize);
-    // window.addEventListener("mousemove", handleWindowMouseMove);
     return () => {
       window.removeEventListener("resize", handleWindowResize);
-      // window.removeEventListener("mousemove", handleWindowMouseMove);
     };
   }, []);
 
@@ -73,7 +67,6 @@ function App() {
   return (
     <div className="App">
       <div className="fundo">
-       
         {action === 1 && (
           <div
             className="pomo"
@@ -118,6 +111,10 @@ function App() {
             PARABENS! VOCE É O MAIS NOVO MEMBRO <br />{" "}
             <span className="gold">COMP JUNIOR !!!</span>{" "}
           </h1>
+          <p className="paragrafo pmenor">
+            Nos encontramos na RG segunda as 12h no anfiteatro do DCC. <br />
+            Ate breve! <br />
+          </p>
         </div>
       )}
     </div>
