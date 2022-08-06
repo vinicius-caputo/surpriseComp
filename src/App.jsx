@@ -99,7 +99,7 @@ function App() {
             {" "}
             Foi um longo caminho até aqui nao é, desde nossa primeira mensagem,{" "}
             <br />
-            você passou por muitos desafios e evoloui demais, <br />
+            você passou por muitos desafios e evoluiu demais, <br />
             e tenho certeza que crescera muito mais aqui dentro. <br />
             Agora é hora de anunciar seu <span className="gold">
               INCRIVEL{" "}
@@ -113,7 +113,7 @@ function App() {
           </h1>
           <p className="paragrafo pmenor">
             Nos encontramos na RG segunda as 12h no anfiteatro do DCC. <br />
-            Ate breve! <br />
+            Não falte vai ser importante! Ate breve!  <br />
           </p>
         </div>
       )}
